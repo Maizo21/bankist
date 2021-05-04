@@ -857,7 +857,7 @@ h4 {
   }
 }
 
-@media (max-width: 327px) {
+@media (max-width: 378px) {
   .nav {
     flex-direction: column;
   }
