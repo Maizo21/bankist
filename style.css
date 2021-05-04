@@ -653,7 +653,7 @@ h4 {
   opacity: 0;
 }
 
-/* COOKIE MESSAGE */
+/* COOKIE MESSAGE
 .cookie-message {
   display: flex;
   align-items: center;
@@ -663,7 +663,7 @@ h4 {
   color: #bbb;
   font-size: 1.5rem;
   font-weight: 400;
-}
+} */
 
 @media (max-width: 815px) {
   .nav__link:link,
