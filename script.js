@@ -43,31 +43,9 @@ btnScrollTo.addEventListener('click', function (e) {
   const s1coords = section1.getBoundingClientRect();
   console.log(s1coords);
 
-  //Scrolling
-  /*   window.scrollTo(
-    s1coords.left + window.pageXOffset,
-    s1coords.top + window.pageYOffset
-  ); */
-
-  //Oldschool way
-  /*   window.scrollTo({
-    left: s1coords.left + window.pageXOffset,
-    top: s1coords.top + window.pageYOffset,
-    behavior: 'smooth',
-  }); */
-
   section1.scrollIntoView({ behavior: 'smooth' });
 });
 
-// Page navigation
-
-/* document.querySelectorAll('.nav__link').forEach(function (el) {
-  el.addEventListener('click', function (e) {
-    e.preventDefault();
-    const id = this.getAttribute('href');
-    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
-  });
-}); */
 
 document.querySelector('.nav__links').addEventListener('click', function (e) {
   e.preventDefault();
@@ -116,19 +94,6 @@ const handleHover = function (e) {
     logo.style.opacity = this;
   }
 };
-/* 
-//Passing "argument" into handler
-nav.addEventListener('mouseover', handleHover.bind(0.5));
-
-nav.addEventListener('mouseout', handleHover.bind(1));
-
-// Sticky navigation
-const initialCoords = section1.getBoundingClientRect();
-
-window.addEventListener('scroll', function () {
-  if (window.scrollY > initialCoords.top) nav.classList.add('sticky');
-  else nav.classList.remove('sticky');
-}); */
 
 // Intersection oberser API
 
